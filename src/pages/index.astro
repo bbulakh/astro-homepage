@@ -1,123 +1,433 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Bogdan Bulakh">
 	<main>
-		<svg
-			class="astro-a"
-			width="495"
-			height="623"
-			viewBox="0 0 495 623"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			aria-hidden="true"
-		>
-			<path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
-				d="M167.19 364.254C83.4786 364.254 0 404.819 0 404.819C0 404.819 141.781 19.4876 142.087 18.7291C146.434 7.33701 153.027 0 162.289 0H332.441C341.703 0 348.574 7.33701 352.643 18.7291C352.92 19.5022 494.716 404.819 494.716 404.819C494.716 404.819 426.67 364.254 327.525 364.254L264.41 169.408C262.047 159.985 255.147 153.581 247.358 153.581C239.569 153.581 232.669 159.985 230.306 169.408L167.19 364.254ZM160.869 530.172C160.877 530.18 160.885 530.187 160.894 530.195L160.867 530.181C160.868 530.178 160.868 530.175 160.869 530.172ZM136.218 411.348C124.476 450.467 132.698 504.458 160.869 530.172C160.997 529.696 161.125 529.242 161.248 528.804C161.502 527.907 161.737 527.073 161.917 526.233C165.446 509.895 178.754 499.52 195.577 500.01C211.969 500.487 220.67 508.765 223.202 527.254C224.141 534.12 224.23 541.131 224.319 548.105C224.328 548.834 224.337 549.563 224.347 550.291C224.563 566.098 228.657 580.707 237.264 593.914C245.413 606.426 256.108 615.943 270.749 622.478C270.593 621.952 270.463 621.508 270.35 621.126C270.045 620.086 269.872 619.499 269.685 618.911C258.909 585.935 266.668 563.266 295.344 543.933C298.254 541.971 301.187 540.041 304.12 538.112C310.591 533.854 317.059 529.599 323.279 525.007C345.88 508.329 360.09 486.327 363.431 457.844C364.805 446.148 363.781 434.657 359.848 423.275C358.176 424.287 356.587 425.295 355.042 426.275C351.744 428.366 348.647 430.33 345.382 431.934C303.466 452.507 259.152 455.053 214.03 448.245C184.802 443.834 156.584 436.019 136.218 411.348Z"
-				fill="url(#paint0_linear_1805_24383)"></path>
-			<defs>
-				<linearGradient
-					id="paint0_linear_1805_24383"
-					x1="247.358"
-					y1="0"
-					x2="247.358"
-					y2="622.479"
-					gradientUnits="userSpaceOnUse"
-				>
-					<stop stop-opacity="0.9"></stop>
-					<stop offset="1" stop-opacity="0.2"></stop>
-				</linearGradient>
-			</defs>
-		</svg>
-		<h1>Welcome to <span class="text-red">Astronaut</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="/src/css/index.css">
+			<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+			<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+			<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+			<link rel="manifest" href="/site.webmanifest">
+			<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+			<meta name="msapplication-TileColor" content="#2d89ef">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+			<script src="//unpkg.com/alpinejs" defer></script>
+			<meta name="theme-color" content="#ffffff">
+		</head>
+		
+		<body>
+		
+			<!-- navbar -->
+			<section class="bg-primary text-primary-content">
+				<div class="navbar flex justify-between max-w-[1000px] mx-auto">
+					<a class="btn btn-ghost normal-case text-xl">BB</a>
+					<a href="images/BBulakh_CV.pdf" download="BBulakh_CV" target="_blank" class="btn btn-md btn-warning"><svg
+							xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+							<path
+								d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z" />
+							<path
+								d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
+						</svg>
+						Get a CV</a>
+				</div>
+			</section>
+		
+			<!-- /navbar -->
+		
+		
+		
+			<!-- hero  -->
+			<section class="">
+				<div class="items-center justify-center hero bg-base-200 py-10">
+		
+					<div>
+						<div class="">
+							<div class="flex pl-[16px] md:pl-0 md:justify-center w-full rounded-full">
+								<img class="rounded-full w-40" src="src/images//bogdan-bulakh.jpg" alt="Bogdan Bulakh Image" />
+							</div>
+						</div>
+		
+						<div class="hero-content text-center">
+		
+							<div class="text-left md:text-center">
+								<h1 class="text-5xl font-bold">Hello there! 👋 </h1>
+								<p class="py-6 font-mono md:text-center">I am Bogdan, a Frontend Developer based in Saint
+									Petersburg.
+								</p>
+								<div class="flex md:justify-center gap-3">
+									<a class="link link-primary" href="https://github.com/bbulakh">Github</a>
+									<a class="link link-primary" href="https://www.linkedin.com/in/bbulakh/">LinkedIn</a>
+									<a class="link link-primary" href="@b_bulakh">Telegram</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /hero  -->
+		
+			<!-- stack  -->
+			<section class="py-10 px-[16px] container mx-auto max-w-[1000px]">
+				<h2 class="text-3xl font-bold mb-10">My stack</h2>
+				<div class="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-7 gap-10 md:place-items-center">
+		
+		
+					<svg class="w-[60px]" viewBox="0 0 128 128">
+						<path fill="#E44D26" d="M27.854 116.354l-8.043-90.211h88.378l-8.051 90.197-36.192 10.033z"></path>
+						<path fill="#F16529" d="M64 118.704l29.244-8.108 6.881-77.076H64z"></path>
+						<path fill="#EBEBEB"
+							d="M64 66.978H49.359l-1.01-11.331H64V44.583H36.257l.264 2.969 2.72 30.489H64zm0 28.733l-.049.013-12.321-3.328-.788-8.823H39.735l1.55 17.372 22.664 6.292.051-.015z">
+						</path>
+						<path
+							d="M28.034 1.627h5.622v5.556H38.8V1.627h5.623v16.822H38.8v-5.633h-5.143v5.633h-5.623V1.627zm23.782 5.579h-4.95V1.627h15.525v5.579h-4.952v11.243h-5.623V7.206zm13.039-5.579h5.862l3.607 5.911 3.603-5.911h5.865v16.822h-5.601v-8.338l-3.867 5.981h-.098l-3.87-5.981v8.338h-5.502V1.627zm21.736 0h5.624v11.262h7.907v5.561H86.591V1.627z">
+						</path>
+						<path fill="#fff"
+							d="M63.962 66.978v11.063h13.624L76.302 92.39l-12.34 3.331v11.51l22.682-6.286.166-1.87 2.6-29.127.27-2.97h-2.982zm0-22.395v11.064h26.725l.221-2.487.505-5.608.265-2.969z">
+						</path>
+					</svg>
+		
+		
+		
+					<svg class="w-[60px]" viewBox="0 0 128 128">
+						<path fill="#131313"
+							d="M89.234 5.856H81.85l7.679 8.333v3.967H73.713v-4.645h7.678l-7.678-8.333V1.207h15.521v4.649zm-18.657 0h-7.384l7.679 8.333v3.967H55.055v-4.645h7.679l-7.679-8.333V1.207h15.522v4.649zm-18.474.19h-7.968v7.271h7.968v4.839H38.471V1.207h13.632v4.839z">
+						</path>
+						<path fill="#1572B6"
+							d="M27.613 116.706l-8.097-90.813h88.967l-8.104 90.798-36.434 10.102-36.332-10.087z"></path>
+						<path fill="#33A9DC" d="M64.001 119.072l29.439-8.162 6.926-77.591H64.001v85.753z"></path>
+						<path fill="#fff" d="M64 66.22h14.738l1.019-11.405H64V43.677h27.929l-.267 2.988-2.737 30.692H64V66.22z">
+						</path>
+						<path fill="#EBEBEB"
+							d="M64.067 95.146l-.049.014-12.404-3.35-.794-8.883H39.641l1.561 17.488 22.814 6.333.052-.015V95.146z">
+						</path>
+						<path fill="#fff"
+							d="M77.792 76.886L76.45 91.802l-12.422 3.353v11.588l22.833-6.328.168-1.882 1.938-21.647H77.792z">
+						</path>
+						<path fill="#EBEBEB"
+							d="M64.039 43.677v11.137H37.136l-.224-2.503-.507-5.646-.267-2.988h27.901zM64 66.221v11.138H51.753l-.223-2.503-.508-5.647-.267-2.988H64z">
+						</path>
+					</svg>
+		
+		
+					<svg class="w-[60px]" viewBox="0 0 128 128">
+						<path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path>
+						<path fill="#323330"
+							d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z">
+						</path>
+					</svg>
+		
+		
+		
+		
+		
+		
+					<svg class="w-[60px]" viewBox="0 0 128 128">
+						<path fill-rule="evenodd" clip-rule="evenodd" fill="#EB4A4B"
+							d="M36.965 35.459c.877 9.232 1.747 18.412 2.637 27.798 1.451-2.495 2.501-4.888 4.085-6.848 1.475-1.826 3.334-3.511 5.357-4.678 2.641-1.524 6.104-.089 6.96 2.614.23.725-.319 1.697-.511 2.556-.646-.341-1.479-.529-1.901-1.051-1.793-2.217-2.873-2.479-4.856-.563-3.699 3.576-5.779 8.056-6.573 13.091-.153.974.456 2.067.713 3.105 1.011-.348 2.185-.476 3.002-1.084 2.656-1.977 4.302-4.666 5.21-7.88.197-.696 1.265-1.145 1.933-1.708.32.658 1.05 1.433.897 1.954a373.814 373.814 0 01-4.536 14.429c-.162.484-1.051.725-1.604 1.079-.223-.636-.692-1.302-.617-1.901.168-1.358.605-2.683.91-3.927l-7.24 3.333c.405 4.622.825 9.807 1.323 14.985.382 3.954 1.029 4.978 4.923 5.728 4.544.875 9.173 1.434 13.792 1.774a60.391 60.391 0 0020.23-1.904c2.472-.664 3.458-2.29 3.635-4.717.162-2.235.524-4.456.775-6.685.493-4.391.972-8.783 1.476-13.358-1.667 1.056-2.978 2.238-4.511 2.739-1.116.365-2.524-.169-3.803-.303.245-1.174.23-2.497.796-3.487.922-1.618 2.224-3.021 3.364-4.515l-.491-.591c-.817.483-1.832.8-2.413 1.485-1.182 1.394-2.339 2.886-3.13 4.52-1.324 2.735-2.333 5.622-3.518 8.426-.515 1.216-.959 3.076-2.684 2.366-1.845-.761-.547-2.386-.114-3.542.689-1.844 1.599-3.606 2.215-4.962-1.746.208-3.516.459-5.294.614-.752.064-1.646-.348-2.261-.07-2.045.924-3.341.553-3.766-1.711-.947.615-1.749 1.448-2.694 1.672-1.147.273-2.703.452-3.543-.121-.673-.459-.918-2.184-.688-3.196.457-2.012 1.311-3.946 2.122-5.859.502-1.185 1.007-3.077 2.701-2.253 1.674.813.154 2.185-.232 3.286-.599 1.702-1.209 3.401-1.813 5.101l.96.58c.914-.794 2.053-1.441 2.693-2.415 1.048-1.592 1.681-3.452 2.673-5.086.411-.677 1.296-1.065 1.967-1.584.136.862.462 1.748.354 2.58-.107.841-.698 1.61-.981 2.442-.425 1.246-.768 2.52-1.2 3.969 2.043.078 2.918-.782 3.495-2.299 1.826-4.793 3.672-9.581 5.679-14.3.343-.808 1.509-1.264 2.296-1.884.091.974.525 2.078.216 2.899-1.645 4.349-3.492 8.62-5.228 12.935-.293.727-.387 1.534-.572 2.304 3.059-1.375 5.612-2.895 6.544-6.146.228-.79 1.162-1.377 1.771-2.058l1.416 1.5c.43-.362.824-.774 1.291-1.075 1.47-.947 3.053-1.782 4.603-.315 1.604 1.517.39 2.995-.448 4.307-.912 1.431-2.029 2.73-3.057 4.086 2.312-1.49 5.469-2.158 5.889-5.378 1.024-7.865 1.924-15.746 2.837-23.625.271-2.332.416-4.679.627-7.109-18.21 4.409-36.029 4.436-54.088-.069zm7.816 61.369c.877 2.317 2.209 4.593 2.558 7.011.737 5.147.924 10.372 1.446 15.554.076.755.565 1.792 1.175 2.124 8.98 4.88 18.047 5.726 27.209.389 1.367-.796 1.62-1.847 1.797-3.325.857-7.181-1.051-14.798 3.54-21.56-12.856 3.189-25.403 3.288-37.725-.193zm30.991-60.08c4.362-.421 8.671-1.445 12.985-2.291.813-.159 1.535-.778 2.299-1.185-1.007-.885-1.878-1.311-2.788-1.418-4.53-.535-9.076-.947-13.603-1.508-.684-.085-1.905-.929-1.854-1.083 1.321-3.98 1.256-8.485 4.254-11.839 3.789-4.24 7.617-8.443 11.416-12.648-2.826-3.04-2.864-3.044-5.425-.383-1.448 1.504-2.771 3.15-4.342 4.512-5.813 5.038-9.896 11.005-10.692 18.872-.183 1.805-1.174 2.457-3.069 2.485-6.256.091-12.519.263-18.761.674-3.093.203-6.148.997-9.221 1.523l-.028 1.149c1.923.593 3.809 1.372 5.773 1.749 10.944 2.098 21.991 2.458 33.056 1.391zM72.276 34c-2.477 2-4.524 2-6.501 0h6.501z">
+						</path>
+					</svg>
+		
+		
+					<svg class="w-[60px]" viewBox="0 0 128 128">
+						<path fill="#F34F29"
+							d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z">
+						</path>
+					</svg>
+		
+		
+		
+		
+					<svg class="w-[60px]" viewBox="0 0 128 128">
+						<path
+							d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
+							fill="#38b2ac"></path>
+					</svg>
+		
+		
+					<svg class="w-[60px]" viewBox="0 0 128 128">
+						<defs>
+							<linearGradient id="bootstrap-original-a" x1="76.079" x2="523.48" y1="10.798" y2="365.95"
+								gradientTransform="translate(1.11 14.613) scale(.24566)" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#9013fe" offset="0"></stop>
+								<stop stop-color="#6610f2" offset="1"></stop>
+							</linearGradient>
+							<linearGradient id="bootstrap-original-b" x1="193.51" x2="293.51" y1="109.74" y2="278.87"
+								gradientTransform="translate(0 52)" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#fff" offset="0"></stop>
+								<stop stop-color="#f1e5fc" offset="1"></stop>
+							</linearGradient>
+							<filter id="bootstrap-original-c" x="161.9" y="135.46" width="197" height="249"
+								color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+								<feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+								</feColorMatrix>
+								<feOffset dy="4"></feOffset>
+								<feGaussianBlur stdDeviation="8"></feGaussianBlur>
+								<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+								<feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+								<feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+							</filter>
+						</defs>
+						<path
+							d="M14.985 27.712c-.237-6.815 5.072-13.099 12.249-13.099h73.54c7.177 0 12.486 6.284 12.249 13.099-.228 6.546.068 15.026 2.202 21.94 2.141 6.936 5.751 11.319 11.664 11.883v6.387c-5.913.564-9.523 4.947-11.664 11.883-2.134 6.914-2.43 15.394-2.202 21.94.237 6.815-5.072 13.098-12.249 13.098h-73.54c-7.177 0-12.486-6.284-12.249-13.098.228-6.546-.068-15.026-2.203-21.94-2.14-6.935-5.76-11.319-11.673-11.883v-6.387c5.913-.563 9.533-4.947 11.673-11.883 2.135-6.914 2.43-15.394 2.203-21.94z"
+							fill="url(#bootstrap-original-a)"></path>
+						<path transform="translate(1.494 2.203) scale(.24566)"
+							d="M267.1 364.46c47.297 0 75.798-23.158 75.798-61.355 0-28.873-20.336-49.776-50.532-53.085v-1.203c22.185-3.609 39.594-24.211 39.594-47.219 0-32.783-25.882-54.138-65.322-54.138h-88.74v217zm-54.692-189.48h45.911c24.958 0 39.131 11.128 39.131 31.279 0 21.505-16.484 33.535-46.372 33.535h-38.67zm0 161.96v-71.431h45.602c32.661 0 49.608 12.03 49.608 35.49 0 23.459-16.484 35.941-47.605 35.941z"
+							fill="url(#bootstrap-original-b)" filter="url(#bootstrap-original-c)" stroke="#fff"></path>
+					</svg>
+		
+		
+		
+		
+				</div>
+		
+			</section>
+			<!-- /stack  -->
+		
+			<!-- projects -->
+			<section class="py-10 container mx-auto max-w-[1000px]">
+				<h2 class="px-[16px] text-3xl font-bold mb-10">Featured projects</h2>
+				<div class="collapse collapse-arrow border-b rounded-none mb-5">
+					<input type="radio" name="my-accordion-2" checked="checked" />
+					<div class="collapse-title text-xl font-medium">
+						Maybell
+						<div class="py-2">
+							<div class="badge badge-outline">HTML5</div>
+							<div class="badge badge-primary badge-outline">CSS</div>
+							<div class="badge badge-secondary badge-outline">TailwindCSS</div>
+							<div class="badge badge-accent badge-outline">JS</div>
+						</div>
+						<div>
+							<p class="text-base font-normal">A collection of free E-commerce website page templates, built with
+								the utility-first Tailwind CSS framework.</p>
+						</div>
+					</div>
+					<div class="collapse-content">
+						<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+							<img class="mb-4" src="src/images/main-page-screenshot.jpg" alt="Maybell Preview">
+							<img class="mb-4 hidden md:block" src="src/images/catalog-screenshot.jpg" alt="Maybell catalog preview">
+							<img class="mb-4 hidden md:block" src="src/images/catalog-screenshot.jpg" alt="Maybell catalog preview">
+						</div>
+						<div class="flex gap-3">
+							<p>See more:</p>
+							<a class="link link-primary" href="https://github.com/bbulakh/tailwind-ecommerce">GitHub</a>
+							<a class="link link-primary" href="https://tailwind-ecommerce-demo.vercel.app/">Live Demo</a>
+						</div>
+					</div>
+				</div>
+		
+		
+				<div class="collapse collapse-arrow border-b rounded-none mb-5">
+					<input type="radio" name="my-accordion-2" />
+					<div class="collapse-title text-xl font-medium">
+						Simple Blog
+						<div class="py-2">
+							<div class="badge badge-outline">HTML5</div>
+							<div class="badge badge-primary badge-outline">CSS</div>
+							<div class="badge badge-secondary badge-outline">TailwindCSS</div>
+						</div>
+						<div>
+							<p class="text-base font-normal">Blog, built with the utility-first Tailwind CSS framework.</p>
+						</div>
+					</div>
+					<div class="collapse-content">
+						<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+							<img class="mb-4" src="src/images/main-screenshot.jpg" alt="Blog Preview">
+							<img class="mb-4 hidden md:block" src="src/images/about-screenshot.jpg" alt="Blog about preview">
+							<img class="mb-4 hidden md:block" src="src/images/article-screenshot.jpg" alt="Blog article preview">
+						</div>
+						<div class="flex gap-3">
+							<p>See more:</p>
+							<a class="link link-primary" href="https://github.com/bbulakh/tailwind-simple-blog">GitHub</a>
+							<a class="link link-primary" href="https://tailwind-simple-blog-demo.vercel.app/">Live Demo</a>
+						</div>
+					</div>
+				</div>
+		
+		
+				<div class="collapse collapse-arrow border-b rounded-none mb-5">
+					<input type="radio" name="my-accordion-2" />
+					<div class="collapse-title text-xl font-medium">
+						MasterCSS Blog template
+						<div class="py-2">
+							<div class="badge badge-outline">HTML5</div>
+							<div class="badge badge-primary badge-outline">CSS</div>
+							<div class="badge badge-secondary badge-outline">Master CSS</div>
+							<div class="badge badge-accent badge-outline">AlpineJS</div>
+							<div class="badge badge-neutral badge-outline">Parcel</div>
+						</div>
+						<div>
+							<p class="text-base font-normal">Blog, built with MasterCSS framework.</p>
+						</div>
+					</div>
+					<div class="collapse-content">
+						<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+							<img class="mb-4" src="src/images/homepage-bloghub.jpg" alt="Bloghub Preview">
+							<img class="mb-4 hidden md:block" src="src/images/article-bloghub.jpg" alt="Bloghub article preview">
+						</div>
+						<div class="flex gap-3">
+							<p>See more:</p>
+							<a class="link link-primary" href="https://github.com/bbulakh/mastercss-blog">GitHub</a>
+							<a class="link link-primary" href="https://mastercss-blog-demo.vercel.app/">Live Demo</a>
+						</div>
+					</div>
+				</div>
+		
+		
+			</section>
+			<!-- /projects  -->
+		
+			<!-- work experience  -->
+			<section class="py-10 px-[16px] container mx-auto max-w-[1000px]">
+				<h2 class="text-3xl font-bold mb-10">Work Experience</h2>
+		
+				<div class="flex flex-col my-5">
+					<div class="flex items-center w-full">
+						<div class="flex w-8/12 items-center">
+							<div class="flex-shrink-0">
+								<img class="rounded-full w-16 object-left" src="src/images/github-logo.svg"
+									alt="Digital Banana Logo">
+							</div>
+		
+							<div class="ml-2 min-w-[145px]">
+								<p class="font-bold text-xl">Open Source</p>
+								<p class="text-sm text-slate-500">Frontend Developer</p>
+							</div>
+						</div>
+		
+						<div class="w-4/12 flex gap-2 text-slate-500">
+							<div class="flex flex-wrap gap-2 ml-auto">
+								<div class="">01.11.2022</div>
+								<span>&mdash;</span>
+								<div class="">Now</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="flex flex-col my-5">
+					<div class="flex justify-between items-center w-full">
+						<div class="flex w-8/12 items-center">
+							<div class="flex-shrink-0">
+								<img class="rounded-full w-16 object-left" src="src/images/skyeng-logo.svg"
+									alt="Digital Banana Logo">
+							</div>
+		
+							<div class="ml-2 min-w-[145px]">
+								<p class="font-bold text-xl">Skyeng</p>
+								<p class="text-sm text-slate-500">Head of Educational Content</p>
+							</div>
+						</div>
+		
+						<div class="w-4/12 flex gap-2 text-slate-500">
+							<div class="flex flex-wrap gap-2 ml-auto">
+								<div class="">01.04.2022</div>
+								<span>&mdash;</span>
+								<div class="">15.07.2022</div>
+							</div>
+						</div>
+		
+		
+					</div>
+				</div>
+		
+				<div class="flex flex-col my-3">
+					<div class="flex justify-between items-center w-full">
+						<div class="flex w-8/12 items-center">
+							<div class="flex-shrink-0">
+								<img class="rounded-full w-16 object-left" src="src/images/jungle-logo.svg"
+									alt="Digital Banana Logo">
+							</div>
+		
+							<div class="ml-2 min-w-[145px]">
+								<p class="font-bold text-xl">Digital Jungle</p>
+								<p class="text-sm text-slate-500">Lead Project Manager</p>
+							</div>
+						</div>
+		
+						<div class="w-4/12 flex gap-2 text-slate-500">
+							<div class="flex flex-wrap gap-2 ml-auto">
+								<div class="">01.06.2020</div>
+								<span>&mdash;</span>
+								<div class="">13.09.2023</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+		
+		
+				<div class="flex flex-col my-3">
+					<div class="flex justify-between items-center w-full">
+						<div class="flex w-8/12 items-center">
+							<div class="flex-shrink-0">
+								<img class="rounded-full w-16" src="src/images/banana-logo.svg" alt="Digital Banana Logo">
+							</div>
+		
+							<div class="ml-2 min-w-[145px]">
+								<p class="font-bold text-xl">Digital Banana</p>
+								<p class="text-sm text-slate-500">Project Manager</p>
+							</div>
+						</div>
+		
+						<div class="w-4/12 flex gap-2 text-slate-500">
+							<div class="flex flex-wrap gap-2 ml-auto">
+								<div class="">01.05.2019</div>
+								<span>&mdash;</span>
+								<div class="">15.03.2022</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+			</section>
+			<!-- /work experience  -->
+		
+			<!-- contact me  -->
+			<section class="py-10 px-[16px] container mx-auto max-w-[1000px]">
+				<h2 class="text-3xl font-bold mb-10">Contact me</h2>
+		
+		
+				<form class="w-full flex gap-3 flex-col" autocomplete="on" action="https://formspree.io/f/xeqbaojp"
+				method="POST">
+					<input class="border py-2 px-2" type="text" name="name" placeholder="Name">
+					<input class="border py-2 px-2" type="email" name="email" placeholder="Email">
+					<textarea class="border px-2 py-2" name="message" id="message" placeholder="Enter the message..." cols="30" rows="5"></textarea>
+					<button class="btn btn-warning" type="submit">Send Message</button>
+				</form>
+		
+				<div class="divider">OR CONNECT ME VIA</div>
+		
+				<div>
+					<div class="flex gap-2 justify-center">
+						<a href="https://github.com/bbulakh"><img src="src/images/github.svg" alt="Github logo"></a>
+						<a href="#"><img src="src/images/facebook.svg" alt=""></a>
+						<a href="https://www.linkedin.com/in/bbulakh/"><img src="src/images/linkedin.svg" alt=""></a>
+						<a href="https://t.me/b_bulakh"><img src="src/images/telegram.svg" alt=""></a>
+		
+					</div>
+		
+				</div>
+		
+			</section>
+			<!-- /contact me  -->
+		
+		
+		
+			<!-- footer  -->
+			<footer class="footer items-center justify-center p-4 bg-neutral text-neutral-content">
+				<div class="items-center grid-flow-col">
+					<p>Copyright © 2023 - Bogdan Bulakh</p>
+				</div>
+			</footer>
+			<!-- /footer  -->
+		
+		
+		</body>
+		
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
-</style>
