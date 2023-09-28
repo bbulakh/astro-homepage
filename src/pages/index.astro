@@ -5,156 +5,13 @@ import Hero from "../components/Hero.astro";
 import Experience from "../components/Experience.astro";
 import Form from "../components/Form.astro";
 import MyStack from "../components/MyStack.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout title="Bogdan Bulakh">
   <Hero />
   <MyStack />
-
-  <!-- projects -->
-  <section class="py-10 container mx-auto max-w-[1000px]">
-    <h2 class="px-[16px] text-3xl font-bold mb-10">Featured projects</h2>
-    <div class="collapse collapse-arrow border-b rounded-none mb-5">
-      <input type="radio" name="my-accordion-2" checked="checked" />
-      <div class="collapse-title text-xl font-medium">
-        Maybell
-        <div class="py-2">
-          <div class="badge badge-outline">HTML5</div>
-          <div class="badge badge-primary badge-outline">CSS</div>
-          <div class="badge badge-secondary badge-outline">TailwindCSS</div>
-          <div class="badge badge-accent badge-outline">JS</div>
-        </div>
-        <div>
-          <p class="text-base font-normal">
-            A collection of free E-commerce website page templates, built with
-            the utility-first Tailwind CSS framework.
-          </p>
-        </div>
-      </div>
-      <div class="collapse-content">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <img
-            class="mb-4"
-            src="src/images/main-page-screenshot.jpg"
-            alt="Maybell Preview"
-          />
-          <img
-            class="mb-4 hidden md:block"
-            src="src/images/catalog-screenshot.jpg"
-            alt="Maybell catalog preview"
-          />
-          <img
-            class="mb-4 hidden md:block"
-            src="src/images/catalog-screenshot.jpg"
-            alt="Maybell catalog preview"
-          />
-        </div>
-        <div class="flex gap-3">
-          <p>See more:</p>
-          <a
-            class="link link-primary"
-            href="https://github.com/bbulakh/tailwind-ecommerce">GitHub</a
-          >
-          <a
-            class="link link-primary"
-            href="https://tailwind-ecommerce-demo.vercel.app/">Live Demo</a
-          >
-        </div>
-      </div>
-    </div>
-
-    <div class="collapse collapse-arrow border-b rounded-none mb-5">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">
-        Simple Blog
-        <div class="py-2">
-          <div class="badge badge-outline">HTML5</div>
-          <div class="badge badge-primary badge-outline">CSS</div>
-          <div class="badge badge-secondary badge-outline">TailwindCSS</div>
-        </div>
-        <div>
-          <p class="text-base font-normal">
-            Blog, built with the utility-first Tailwind CSS framework.
-          </p>
-        </div>
-      </div>
-      <div class="collapse-content">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <img
-            class="mb-4"
-            src="src/images/main-screenshot.jpg"
-            alt="Blog Preview"
-          />
-          <img
-            class="mb-4 hidden md:block"
-            src="src/images/about-screenshot.jpg"
-            alt="Blog about preview"
-          />
-          <img
-            class="mb-4 hidden md:block"
-            src="src/images/article-screenshot.jpg"
-            alt="Blog article preview"
-          />
-        </div>
-        <div class="flex gap-3">
-          <p>See more:</p>
-          <a
-            class="link link-primary"
-            href="https://github.com/bbulakh/tailwind-simple-blog">GitHub</a
-          >
-          <a
-            class="link link-primary"
-            href="https://tailwind-simple-blog-demo.vercel.app/">Live Demo</a
-          >
-        </div>
-      </div>
-    </div>
-
-    <div class="collapse collapse-arrow border-b rounded-none mb-5">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">
-        MasterCSS Blog template
-        <div class="py-2">
-          <div class="badge badge-outline">HTML5</div>
-          <div class="badge badge-primary badge-outline">CSS</div>
-          <div class="badge badge-secondary badge-outline">Master CSS</div>
-          <div class="badge badge-accent badge-outline">AlpineJS</div>
-          <div class="badge badge-neutral badge-outline">Parcel</div>
-        </div>
-        <div>
-          <p class="text-base font-normal">
-            Blog, built with MasterCSS framework.
-          </p>
-        </div>
-      </div>
-      <div class="collapse-content">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <img
-            class="mb-4"
-            src="src/images/homepage-bloghub.jpg"
-            alt="Bloghub Preview"
-          />
-          <img
-            class="mb-4 hidden md:block"
-            src="src/images/article-bloghub.jpg"
-            alt="Bloghub article preview"
-          />
-        </div>
-        <div class="flex gap-3">
-          <p>See more:</p>
-          <a
-            class="link link-primary"
-            href="https://github.com/bbulakh/mastercss-blog">GitHub</a
-          >
-          <a
-            class="link link-primary"
-            href="https://mastercss-blog-demo.vercel.app/">Live Demo</a
-          >
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /projects  -->
+  <Projects />
 
   <section class="py-10 px-[16px] container mx-auto max-w-[1000px]">
     <h2 class="text-3xl font-bold mb-10">Work Experience</h2>
@@ -178,7 +35,7 @@ import MyStack from "../components/MyStack.astro";
       role="Lead Project Manager"
       periodStart="01.06.2020"
       periodEnd="13.09.2023"
-      companyLogo="src/images/skyeng-logo.svg"
+      companyLogo="src/images/jungle-logo.svg"
     />
 
     <Experience
