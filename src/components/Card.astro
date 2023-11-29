@@ -10,14 +10,15 @@ interface Props {
   demoHref: string;
 }
 
-const { name, about, imgSrc, picSrc, picType, imgAlt, projectHref, demoHref } = Astro.props;
+const { name, about, imgSrc, picSrc, picType, imgAlt, projectHref, demoHref } =
+  Astro.props;
 ---
 
 <div class="card bg-base-100 border">
   <picture>
-    <source class="rounded-t-xl" srcset={picSrc} type={picType}>
+    <source class="rounded-t-xl" srcset={picSrc} type={picType} />
     <img class="rounded-t-2xl" src={imgSrc} alt={imgAlt} />
-</picture>
+  </picture>
   <div class="card-body">
     <h2 class="card-title">{name}</h2>
     <p>{about}</p>
