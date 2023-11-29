@@ -6,12 +6,59 @@ import Experience from "../components/Experience.astro";
 import Form from "../components/Form.astro";
 import MyStack from "../components/MyStack.astro";
 import Projects from "../components/Projects.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="Bogdan Bulakh">
   <Hero />
   <MyStack />
   <Projects />
+
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-[16px] mx-auto max-w-[1000px]"
+  >
+    <Card
+      name="Maybell E-commerce"
+      about="A collection of free E-commerce website page templates, built with the utility-first Tailwind CSS framework."
+      picSrc="images/main-page-screenshot.webp"
+      picType="image/webp"
+      imgSrc="images/main-page-screenshot.jpg"
+      imgAlt="Maybell Preview"
+    />
+    <Card
+      name="Simple Blog"
+      about="Blog, built with the utility-first Tailwind CSS framework."
+      picSrc="images/simple-blog-screenshot.webp"
+      picType="image/webp"
+      imgSrc="images/simple-blog-screenshot.jpg"
+      imgAlt="Simple Blog Preview"
+    />
+    <Card
+      name="BlogHub"
+      about="Free Blog Template, built with MasterCSS Framework"
+      picSrc="images/homepage-bloghub.webp"
+      picType="image/webp"
+      imgSrc="images/homepage-bloghub.jpg"
+      imgAlt="Bloghub Preview"
+    />
+    <Card
+      name="Email templates"
+      about="A collection of email templates. Free to use."
+      picSrc="images/email.webp"
+      picType="image/webp"
+      imgSrc="images/email.jpg"
+      imgAlt="E-mail templates"
+    />
+
+    <Card
+      name="Astro CMS Blog"
+      about="Online Magazine template built with Astro CMS"
+      picSrc="images/astro.webp"
+      picType="image/webp"
+      imgSrc="images/astro.jpg"
+      imgAlt="Astro template"
+    />
+  </div>
 
   <section class="py-10 px-[16px] container mx-auto max-w-[1000px]">
     <h3 class="text-3xl font-bold mb-10">Work Experience</h3>
