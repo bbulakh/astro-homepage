@@ -1,0 +1,23 @@
+---
+interface Props {
+    pageName : string;
+}
+
+const {pageName} = Astro.props
+---
+
+
+<nav class="mx-auto w-full mt-4 max-w-[1000px] pl-[16px]">
+    <ul class="flex items-center">
+      <li class="cursor-pointer">
+        <a class="dark:text-white" href="/index.html">
+          Home
+        </a>
+      </li>
+      <li>
+        <span class="mx-2 text-gray-500">&bullet;</span>
+      </li>
+
+      <li class="text-gray-500">{pageName}</li>
+    </ul>
+  </nav>
