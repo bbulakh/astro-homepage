@@ -3,14 +3,31 @@ interface Props {
   srcset: string;
   imgSrc: string;
   imgAlt: string;
+  lgSrcset: string;
+  lgImgSrc: string;
+  lgImgAlt: string;
 }
 
-const { imgSrc, imgAlt, srcset } = Astro.props;
+const { imgSrc, imgAlt, srcset, lgSrcset, lgImgSrc, lgImgAlt } = Astro.props;
 ---
 
-<div class="px-[16px] mx-auto max-w-[1000px] my-5">
-  <picture>
-    <source srcset={srcset} type="image/webp" />
-    <img class= src={imgSrc} alt={imgAlt} />
+<div class="px-[16px] flex flex-col gap-5 lg:pl-[16px] lg:px-0 my-5">
+  <picture class="cursor-zoom-in border lg:hidden">
+    <source srcset={srcset} type="image/webp" media="(max-width: 1023px)" />
+    <img src={imgSrc} alt={imgAlt} />
+  </picture>
+
+  <picture class="cursor-zoom-in hidden border rounded-2xl lg:block">
+    <source
+      class="rounded-2xl"
+      srcset={lgSrcset}
+      type="image/webp"
+      media="(min-width: 1024px)"
+    />
+    <img
+      class="rounded-2xl"
+      src={lgImgSrc}
+      alt={lgImgAlt}
+    />
   </picture>
 </div>
