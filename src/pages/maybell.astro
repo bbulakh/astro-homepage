@@ -1,11 +1,33 @@
 ---
 import Breadcrumbs from "../components/Breadcrumbs.astro";
+import Form from "../components/Form.astro";
 import ProjectHero from "../components/ProjectHero.astro";
+import ProjectInfo from "../components/ProjectInfo.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Maybell">
-<Breadcrumbs pageName="Maybell"/>
-<ProjectHero srcset="/images/main-page-screenshot.webp" imgSrc="images/main-page-screenshot.jpg" imgAlt="Maybell Home page"/>
+  <Breadcrumbs pageName="Maybell" />
+  <div class="lg:flex gap-3 mx-auto max-w-[1000px]">
+    <div class="lg:min-w-[300px]">
+      <ProjectHero
+        srcset="/images/main-page-screenshot.webp"
+        lgSrcset="/images/maybell-fullscreen.webp"
+        lgImgSrc="/images/maybell-fullscreen.png"
+        lgImgAlt="Maybell fullscreen preview"
+        imgSrc="images/main-page-screenshot.jpg"
+        imgAlt="Maybell Home page"
+      />
+    </div>
+    <div>
+      <ProjectInfo
+        title="Tailwind - E-commerce"
+        subtitle="A collection of free E-commerce website page templates, built with the utility-first Tailwind CSS framework. MIT licensed - free for personal and commercial use."
+        liveHref="https://tailwind-ecommerce-demo.vercel.app/index.html"
+        repoHref="https://github.com/bbulakh/tailwind-ecommerce/tree/2.x"
+      />
+    </div>
+  </div>
 
+  <Form />
 </Layout>
