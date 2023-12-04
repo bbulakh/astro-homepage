@@ -1,45 +1,49 @@
 ---
 interface Props {
-    title: string; 
-    subtitle: string;
-
+  title: string;
+  subtitle: string;
 }
 
-const {title, subtitle} = Astro.props
+const { title, subtitle } = Astro.props;
 ---
 
-<section class="px-[16px] mx-auto max-w-[1200px] my-5">
-    <h1 class="text-3xl font-bold py-3">{title}</h1>
-    <p class="mb-5">{subtitle}</p>
-    <h2 class="text-2xl font-bold mb-3 pt-5">Getting started</h2>
-    <div class="mockup-code">
-        <pre data-prefix="1" class="text-warning"><code>Clone the project</code></pre> 
-        <pre data-prefix="$"><code>git clone https://github.com/bbulakh/tailwind-ecommerce.git</code></pre> 
-        <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
-        <pre><code></code></pre>
-        <pre data-prefix="2" class="text-warning"><code>Install the dependencies:</code></pre>
-        <pre data-prefix="$"><code>npm install</code></pre> 
-        <pre data-prefix=">" class="text-success"><code>Dependencies have been installed succesfully!</code></pre>
-        <pre><code></code></pre>
-        <pre data-prefix="3" class="text-warning"><code>Run the project</code></pre>
-        <pre data-prefix="#"><code>Start server</code></pre>
-        <pre data-prefix="#"><code>npm run start</code></pre>
-        <pre><code></code></pre>
-        <pre data-prefix="#"><code>Or Build</code></pre>
-        <pre data-prefix="#"><code>npm run build</code></pre>
-        <pre><code></code></pre>
-        <pre><code>&#128156; Use it for your purposes and share your feedback with me!</code></pre>
-      </div>
+<section class="px-[16px] mx-auto max-w-[1000px] my-5">
+  <h1 class="text-3xl font-bold py-3 lg:pt-0">{title}</h1>
+  <p class="mb-5">{subtitle}</p>
+  <h2 class="text-2xl font-bold mb-3 pt-5">Getting started</h2>
+  <div class="mockup-code text-xs sm:text-sm">
+    <pre
+      data-prefix="1"
+      class="text-warning"><code>Clone the project</code></pre>
+    <pre
+      data-prefix="$"><code>git clone https://github.com/bbulakh/tailwind-ecommerce.git</code></pre>
+    <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
+    <pre><code /></pre>
+    <pre
+      data-prefix="2"
+      class="text-warning"><code>Install the dependencies:</code></pre>
+    <pre data-prefix="$"><code>npm install</code></pre>
+    <pre
+      data-prefix=">"
+      class="text-success"><code>Dependencies have been installed succesfully!</code></pre>
+    <pre><code /></pre>
+    <pre data-prefix="3" class="text-warning"><code>Run the project</code></pre>
+    <pre data-prefix="#"><code>Start server</code></pre>
+    <pre data-prefix="#"><code>npm run start</code></pre>
+    <pre><code /></pre>
+    <pre data-prefix="#"><code>Or Build</code></pre>
+    <pre data-prefix="#"><code>npm run build</code></pre>
+    <pre><code /></pre>
+    <pre><code>&#128156; Use it for your purposes and share your feedback with me!</code></pre>
+  </div>
 
-      <h2 class="text-2xl font-bold py-5">Project preview:</h2>
-      
-      <div class="flex gap-2">
-        <a class="btn btn-sm" href="#">Live Demo</a>
-        <a class="btn btn-sm btn-primary" href="#">Repository</a>
-      </div>
-      
+  <h2 class="text-2xl font-bold py-5">Project preview:</h2>
 
-      <h2 class="text-2xl font-bold py-5">License</h2>
-      <p class="mb-5">MIT License</p>
+  <div class="flex gap-2">
+    <a class="btn" href="#">Live Demo</a>
+    <a class="btn btn-primary" href="#">Repository</a>
+  </div>
 
+  <h2 class="text-2xl font-bold py-5">License</h2>
+  <a href="#" class="link-primary">The MIT License(MIT)</a>
 </section>
