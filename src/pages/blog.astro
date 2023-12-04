@@ -1,0 +1,34 @@
+---
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import Form from "../components/Form.astro";
+import ProjectHero from "../components/ProjectHero.astro";
+import ProjectInfo from "../components/ProjectInfo.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Simple Blog">
+  <Breadcrumbs pageName="Simple Blog" />
+  <div class="lg:flex gap-3 mx-auto max-w-[1000px]">
+    <div class="lg:min-w-[300px]">
+      <ProjectHero
+        srcset="/images/simple-blog-screenshot.webp"
+        lgSrcset="/images/simple-blog-full.webp"
+        lgImgSrc="/images/simple-blog-full.png"
+        lgImgAlt="Blog fullscreen preview"
+        imgSrc="images/main-page-screenshot.jpg"
+        imgAlt="Blog page preview"
+      />
+    </div>
+    <div>
+      <ProjectInfo
+        title="Tailwind - Simple Blog"
+        subtitle="Blog, built with the utility-first Tailwind CSS framework."
+        liveHref="https://tailwind-simple-blog-demo.vercel.app/"
+        repoHref="https://github.com/bbulakh/tailwind-simple-blog"
+        projectHref="https://github.com/bbulakh/tailwind-simple-blog"
+      />
+    </div>
+  </div>
+
+  <Form />
+</Layout>
