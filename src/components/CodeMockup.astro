@@ -1,0 +1,35 @@
+---
+interface Props {
+    projectHref: string;
+}
+
+const {projectHref} = Astro.props;
+---
+
+
+<h2 class="text-2xl font-bold mb-3 pt-5">Getting started</h2>
+  <div class="mockup-code text-xs sm:text-sm">
+    <pre
+      data-prefix="1"
+      class="text-warning"><code>Clone the project</code></pre>
+    <pre
+      data-prefix="$"><code>git clone {projectHref}</code></pre>
+    <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
+    <pre><code /></pre>
+    <pre
+      data-prefix="2"
+      class="text-warning"><code>Install the dependencies:</code></pre>
+    <pre data-prefix="$"><code>npm install</code></pre>
+    <pre
+      data-prefix=">"
+      class="text-success"><code>Dependencies have been installed succesfully!</code></pre>
+    <pre><code /></pre>
+    <pre data-prefix="3" class="text-warning"><code>Run the project</code></pre>
+    <pre data-prefix="#"><code>Start server</code></pre>
+    <pre data-prefix="#"><code>npm run start</code></pre>
+    <pre><code /></pre>
+    <pre data-prefix="#"><code>Or Build</code></pre>
+    <pre data-prefix="#"><code>npm run build</code></pre>
+    <pre><code /></pre>
+    <pre><code>&#128156; Use it for your purposes and share your feedback with me!</code></pre>
+  </div>
