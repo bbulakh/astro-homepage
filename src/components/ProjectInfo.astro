@@ -2,9 +2,11 @@
 interface Props {
   title: string;
   subtitle: string;
+  liveHref: string;
+  repoHref: string;
 }
 
-const { title, subtitle } = Astro.props;
+const { title, subtitle, liveHref, repoHref } = Astro.props;
 ---
 
 <section class="px-[16px] mx-auto max-w-[1000px] my-5">
@@ -40,8 +42,8 @@ const { title, subtitle } = Astro.props;
   <h2 class="text-2xl font-bold py-5">Project preview:</h2>
 
   <div class="flex gap-2">
-    <a class="btn" href="#">Live Demo</a>
-    <a class="btn btn-primary" href="#">Repository</a>
+    <a class="btn btn-primary" href={liveHref}>Live Demo</a>
+    <a class="btn" href={repoHref}>GitHub</a>
   </div>
 
   <h2 class="text-2xl font-bold py-5">License</h2>
