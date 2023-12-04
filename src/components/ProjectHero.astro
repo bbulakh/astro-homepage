@@ -1,0 +1,16 @@
+---
+interface Props {
+  srcset: string;
+  imgSrc: string;
+  imgAlt: string;
+}
+
+const { imgSrc, imgAlt, srcset } = Astro.props;
+---
+
+<div class="px-[16px] mx-auto max-w-[1000px] my-5">
+  <picture>
+    <source srcset={srcset} type="image/webp" />
+    <img class= src={imgSrc} alt={imgAlt} />
+  </picture>
+</div>
