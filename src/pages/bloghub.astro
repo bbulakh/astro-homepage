@@ -1,0 +1,34 @@
+---
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import Form from "../components/Form.astro";
+import ProjectHero from "../components/ProjectHero.astro";
+import ProjectInfo from "../components/ProjectInfo.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Bloghub">
+  <Breadcrumbs pageName="Bloghub" />
+  <div class="lg:flex gap-3 mx-auto max-w-[1000px]">
+    <div class="lg:min-w-[300px]">
+      <ProjectHero
+        srcset="/images/bloghub-full.webp"
+        lgSrcset="/images/bloghub-full.webp"
+        lgImgSrc="/images/bloghub-full.png"
+        lgImgAlt="Bloghub fullscreen preview"
+        imgSrc="images/main-page-screenshot.jpg"
+        imgAlt="Bloghub Home page"
+      />
+    </div>
+    <div>
+      <ProjectInfo
+        title="Bloghub"
+        subtitle="Simple Blog, built with MasterCSS Framework"
+        liveHref="https://mastercss-blog-demo.vercel.app/"
+        repoHref="https://github.com/bbulakh/mastercss-blog"
+        projectHref="https://github.com/bbulakh/mastercss-blog"
+      />
+    </div>
+  </div>
+
+  <Form />
+</Layout>
