@@ -1,12 +1,17 @@
 ---
+
+import CodeMockup from './CodeMockup.astro';
+
+
 interface Props {
   title: string;
   subtitle: string;
   liveHref: string;
   repoHref: string;
+  projectHref: string;
 }
 
-const { title, subtitle, liveHref, repoHref } = Astro.props;
+const { title, subtitle, liveHref, repoHref, projectHref } = Astro.props;
 ---
 
 <section class="px-[16px] mx-auto max-w-[1000px] my-5">
@@ -18,7 +23,7 @@ const { title, subtitle, liveHref, repoHref } = Astro.props;
       data-prefix="1"
       class="text-warning"><code>Clone the project</code></pre>
     <pre
-      data-prefix="$"><code>git clone https://github.com/bbulakh/tailwind-ecommerce.git</code></pre>
+      data-prefix="$"><code>git clone {projectHref}</code></pre>
     <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
     <pre><code /></pre>
     <pre
