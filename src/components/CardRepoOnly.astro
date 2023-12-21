@@ -1,0 +1,28 @@
+---
+interface Props {
+  name: string;
+  about: string;
+  picSrc: string;
+  picType: string;
+  imgSrc: string;
+  imgAlt: string;
+  projectHref: string;
+}
+
+const { name, about, imgSrc, picSrc, picType, imgAlt, projectHref } =
+  Astro.props;
+---
+
+<div class="card bg-base-100 border">
+  <picture>
+    <source class="rounded-t-xl" srcset={picSrc} type={picType} />
+    <img class="rounded-t-2xl" src={imgSrc} alt={imgAlt} />
+  </picture>
+  <div class="card-body">
+    <h2 class="card-title">{name}</h2>
+    <p>{about}</p>
+    <div class="flex gap-2 mt-3">
+      <a href={projectHref} class="btn btn-md btn-neutral text-neutral-content">See Repo</a>
+    </div>
+  </div>
+</div>
