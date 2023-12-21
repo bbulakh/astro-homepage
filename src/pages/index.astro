@@ -7,6 +7,7 @@ import Form from "../components/Form.astro";
 import MyStack from "../components/MyStack.astro";
 import Projects from "../components/Projects.astro";
 import Card from "../components/Card.astro";
+import CardRepoOnly from "../components/CardRepoOnly.astro";
 ---
 
 <Layout title="Bogdan Bulakh">
@@ -46,6 +47,26 @@ import Card from "../components/Card.astro";
       imgAlt="Bloghub Preview"
       projectHref="/bloghub/"
       demoHref="https://mastercss-blog-demo.vercel.app/"
+    />
+
+    <CardRepoOnly
+      name="MJML Templates"
+      about="E-commerce e-mail templates built with MJML"
+      picSrc="/images/email.webp"
+      picType="image/webp"
+      imgSrc="/images/email.jpg"
+      imgAlt="E-mail templates Preview"
+      projectHref="https://github.com/bbulakh/ecommerce-email"
+    />
+
+    <CardRepoOnly
+      name="AstroCMS Blog"
+      about="Free Blog Template, built with Tailwind + AstroCMS"
+      picSrc="/images/astro.webp"
+      picType="image/webp"
+      imgSrc="/images/astro.jpg"
+      imgAlt="Astro blog Preview"
+      projectHref="https://github.com/bbulakh/astro-blog"
     />
   </div>
 
